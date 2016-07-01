@@ -1,0 +1,5 @@
+c:\users\daniel.moran\documents\visual studio 2015\Projects\dirtree\dirtree\bin\Debug\dirtree.exe
+c:\users\daniel.moran\documents\visual studio 2015\Projects\dirtree\dirtree\bin\Debug\dirtree.pdb
+c:\users\daniel.moran\documents\visual studio 2015\Projects\dirtree\dirtree\obj\Debug\dirtree.csprojResolveAssemblyReference.cache
+c:\users\daniel.moran\documents\visual studio 2015\Projects\dirtree\dirtree\obj\Debug\dirtree.exe
+c:\users\daniel.moran\documents\visual studio 2015\Projects\dirtree\dirtree\obj\Debug\dirtree.pdb
