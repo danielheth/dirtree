@@ -44,7 +44,10 @@ namespace dirtree
                 }
             }
 
-            if (dir.StartsWith("./") || dir.StartsWith(".\\")) dir = AppFolder + dir.Substring(2, dir.Length - 2).Replace("/","\\");
+            if (dir.StartsWith("./") || dir.StartsWith(".\\"))
+            {
+                dir = Environment.CurrentDirectory + dir.Substring(2, dir.Length - 2).Replace("/", "\\");
+            }
 
             Console.WriteLine(" Directory of " + dir);
             //if (ExcludeDirectories.Count > 0)
@@ -74,16 +77,6 @@ namespace dirtree
 #endif
         }
 
-        static string AppFolder
-        {
-            get
-            {
-                var directoryInfo = new FileInfo(Assembly.GetExecutingAssembly().Location).Directory;
-                if (directoryInfo != null)
-                    return directoryInfo.FullName + "\\";
-                return null;
-            }
-        }
 
         static void DirSearch(string sDir, string rootDir, string indent = "", List<string> ExcludeDirectories = null)
         {
